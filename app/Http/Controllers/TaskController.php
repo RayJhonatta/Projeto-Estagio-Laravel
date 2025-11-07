@@ -14,8 +14,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-      //   return TaskResource::collection(Task::all());
-
+        return TaskResource::collection(Task::all());
     }
 
     /**
@@ -41,7 +40,8 @@ class TaskController extends Controller
      */
     public function show(Task $task)
     {
-        return new TaskResource($task);
+       // return new TaskResource($task);
+        return 'Teste';
     }
 
     /**
